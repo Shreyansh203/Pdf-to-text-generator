@@ -1,0 +1,1 @@
+This project extracts text from a PDF file using Tesseract OCR and OpenCV, then saves the extracted text to a CSV file. It first converts the PDF pages to images, processes these images to enhance OCR accuracy, and then writes the resulting text to the CSV. This allows for easy extraction and storage of text data from PDF documents.
