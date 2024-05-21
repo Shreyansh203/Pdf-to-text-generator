@@ -40,35 +40,28 @@ def extract_text_from_pdf(pdf_path, output_folder):
 
 def update_csv(file_path, data):
     """Update a CSV file with the extracted data."""
-    # Check if the CSV file exists
     file_exists = os.path.isfile(file_path)
-
-    # Open the CSV file in append mode
     with open(file_path, 'a', newline='') as csvfile:
         fieldnames = ['Extracted Text']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
-        # Write header only if the file is new
         if not file_exists:
             writer.writeheader()
-
-        # Write the data
         writer.writerow({'Extracted Text': data})
 
-# Path to your PDF file
+
 pdf_path = r'C:\Users\ASUS\Desktop\pdf_to_text\test.pdf'
-# Folder to save images of PDF pages
+
 output_folder = r'C:\Users\ASUS\Desktop\pdf_to_text\temp_images'
-# Path to your CSV file
+
 csv_file_path = r'C:\Users\ASUS\Desktop\pdf_to_text\extracted_data.csv'
 
-# Create the output folder if it doesn't exist
+
 os.makedirs(output_folder, exist_ok=True)
 
-# Extract text from the PDF
+
 try:
     extracted_text = extract_text_from_pdf(pdf_path, output_folder)
-    # Update the CSV file with the extracted text
+ 
     update_csv(csv_file_path, extracted_text)
     print("Data successfully written to CSV.")
 except Exception as e:
