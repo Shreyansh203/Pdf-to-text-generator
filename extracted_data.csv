@@ -1,0 +1,740 @@
+Extracted Text
+"Tax Invoice InterGlobe Aviation Limited
+(Original For Re
+
+Terminal-1B
+
+Chhatrapati Shivaji International
+Airport
+
+Santacruz East
+
+Mumbai City
+
+Maharashtra - 400099
+
+GSTIN : 27AABCI2726B122
+
+Number : MH1232407BE87925
+Date : 11-Jul-2023
+
+Passenger Name :
+
+PNR: EPYYSP Flight No : 6E - 296 From : BOM To : AMD Place of Supply : Maharashtra
+
+GSTIN of Customer : 27AAACM9401C1ZV
+
+GSTIN Customer Name : MANKIND PHARMA LIMITED-MUMBAI
+Currency : INR
+
+NonTaxab 1GST cast SGST/UGST CESS
+ante SAC | Taxable Total(Inel
+Description Code | Value | 'e/Exempt| Total | 72, Tamount| Tax% |Amount| Tax% |Amount| Tax% |Amount| Taxes)
+Air Travel and
+related charges 996425 | 1,842.00 0.00/ 1,842.00 6.00 0.00 2.50) 46.00 2.50} 46.00 Q 9.00) 1,934.00
+Grand Total 1,842.0) 354.00 2196.0 0.00 46.00 46.00 0.00) 2,288.00
+
+1. Air Travel And Related Charges :- Includes all charges related to air transportation of passengers
+2. Airport Charges :- Includes ADF, UDF, PSF and other airport charges collected on behalf of Airport operator, as applicable
+3. Misc. Services :- Includes charges of lounge, medical assistance and travel certificate
+4. Meal :- Includes all prepaid meals purchased before travel
+5. Good Karma :- Includes contributions made towards IndiGo's good karma initiative and clear the air initiative
+made at the time of reservation
+6. Amounts have been rounded off.
+7. Cess includes Kerala flood cess.
+8. The itinerary issued against this PNR forms a part of this invoice.
+9. We hereby declare that though our aggregate turnover in any preceding financial year from 2017-18 onwards is more than the aggregate
+turnover notified under sub-rule (4) of rule 48, we are not required to prepare an invoice in terms of the provisions of the said sub-rule.
+
+|.
+
+Authorized Signatory
+
+InterGlobe Aviation Limited
+
+Registered Office: Upper Ground Floor, Thapar House, Gate No. 2, Western Wing, 124 Janpath, New Delhi —
+116004, India.
+
+F 011-43513200. Email: corporate @ goindigo.in
+
+Corporate Office: Level 1, Tower C, Global Business park, MG Road, Gurgaon-122002, Haryana, India.
+
+T +91 124 435 2500. F +91 124 406 8536 goindigo.in
+
+CIN no. L62100DL2004PLC129768, PAN no. AABCI2726B, FSSAI License number- 10013011001534
+
+
+"
+"Smart Traffic Management System Using Image
+Processing
+
+Shreyansh Agrawal
+Dept. Computer Science
+
+Ayushi Singh
+Dept. Computer Science
+
+Amar Kumar Tarei
+Dept. Computer Science
+
+Netaji Subhas University of Technology Netaji Subhas University of Technology Netaji Subhas University of Technology
+
+Delhi , India
+shreyansh.agrawal.ug21 @nsut.ac.in
+
+Abstract—The Smart Traffic Management System (STMS)
+is an innovative solution designed to optimize traffic flow on
+multi-lane roads while ensuring efficient handling of emergency
+vehicles. The system employs state-of-the-art technologies such
+as YOLO (You Only Look Once) object detection for real-time
+vehicle detection and density calculation, along with RFID (Radio
+Frequency Identification) for prioritizing emergency vehicles.
+The primary objective of the STMS is to enhance traffic man-
+agement by dynamically adjusting traffic light durations based
+on the density of vehicles in each lane. By leveraging YOLO
+object detection, the system continuously monitors video feeds
+from multiple lanes captured by webcams or recorded sources.
+Through multithreading techniques, concurrent processing of the
+video feeds enables real-time detection of vehicles in all lanes
+simultaneously, ensuring timely and accurate data collection.
+Once vehicles are detected, the STMS calculates the vehicle
+density in each lane by analyzing the number of vehicles
+present within a specified timeframe. This density information
+serves as a crucial input for traffic light control logic, where
+lanes with higher vehicle density are granted longer green
+light durations to facilitate smoother traffic flow. This adaptive
+approach minimizes congestion and reduces travel time for com-
+muters, thereby improving overall road efficiency. Furthermore,
+the STMS integrates RFID technology to prioritize emergency
+vehicles such as ambulances, fire trucks, and police cars. Each
+emergency vehicle is equipped with an RFID tag that emits
+a unique identifier. When an emergency vehicle approaches a
+traffic intersection, the RFID reader installed in the vicinity
+detects the tag’s signal, triggering immediate action from the
+STMS. In response, the system dynamically adjusts traffic lights
+to provide a clear pathway for the emergency vehicle, minimizing
+response times and potentially saving lives. The proposed STMS
+offers several advantages over traditional traffic management
+systems. By leveraging machine learning and computer vision
+techniques, it provides real-time insights into traffic conditions,
+allowing for adaptive control strategies tailored to specific traffic
+patterns. Moreover, the integration of RFID technology ensures
+swift and efficient handling of emergency situations, contributing
+to enhanced safety and emergency response capabilities on the
+road. In conclusion, the Smart Traffic Management System
+presented in this paper demonstrates a holistic approach to
+traffic optimization and emergency vehicle prioritization. By
+combining advanced technologies such as YOLO object detection
+and RFID, the system offers a robust solution for modern traffic
+management challenges, paving the way for safer and more
+efficient urban mobility systems.
+
+Index Terms—Smart Traffic Management System , YOLO ,
+Multithreading , Vehicle Density , RFID , Real-time Control
+
+Delhi , India
+ayushi.singh.ug? 1 @nsut.ac.in
+
+Delhi , India
+amar.tarei.ug? 1 @nsut.ac.in
+
+I. INTRODUCTION
+
+The Smart Traffic Management System (STMS) is a cutting-
+edge solution designed to enhance traffic flow efficiency on
+multi-lane roads. By leveraging advanced technologies such as
+YOLO object detection and RFID, the system addresses the
+challenges of modern urban mobility. Utilizing webcams or
+recorded video feeds, the STMS employs YOLO for real-time
+vehicle detection and density calculation across multiple lanes
+concurrently. Through multithreading techniques, the system
+ensures timely processing of video data, enabling efficient
+traffic monitoring. Vehicle density information is then used
+to dynamically adjust traffic light durations, optimizing signal
+timing based on traffic conditions in each lane. Additionally,
+RFID tags are incorporated to prioritize emergency vehicles,
+ensuring swift passage through intersections when necessary.
+This holistic approach not only minimizes congestion and
+reduces travel time for commuters but also enhances safety
+by facilitating emergency response. In summary, the STMS
+represents a comprehensive solution that harnesses the power
+of machine learning and [oT technologies to revolutionize
+traffic management in urban environments.
+
+The Smart Traffic Management System (STMS) has a
+broad application area encompassing urban and suburban road
+networks, highways, and intersections. Its primary goal is
+to optimize traffic flow and enhance road safety in densely
+populated areas with high vehicular traffic. The system is
+particularly useful in cities facing congestion issues and those
+striving to improve emergency vehicle response times.The
+Hardware Components required are LEDs, wires, Arduino
+microcontroller, RFID tags and readers, breadboard, resis-
+tors,webcam.The Software requirements are YOLO object
+detection model, Arduino IDE for programming the micro-
+controller.Stable power source to operate the system con-
+tinuously.Urban areas often grapple with traffic congestion,
+leading to increased travel time, fuel consumption, and envi-
+ronmental pollution. Traditional traffic management systems
+may struggle to adapt to dynamic traffic conditions, resulting
+in inefficiencies and delays. Moreover, emergency vehicles
+face challenges navigating through congested intersections,
+potentially delaying critical medical or rescue operations.
+
+The Smart Traffic Management System (STMS) offers a
+
+comprehensive solution to the pervasive problem of urban traf-
+fic congestion and inefficient emergency vehicle navigation.
+By combining advanced technologies such as YOLO object
+detection and RFID, the system revolutionizes traffic man-
+agement on multi-lane roads and intersections. Through real-
+time vehicle detection and density calculation, STMS provides
+accurate insights into traffic conditions, enabling adaptive
+control strategies. Utilizing LED traffic lights controlled by Ar-
+duino microcontrollers, the system dynamically adjusts signal
+timings based on current traffic flow, minimizing congestion
+and reducing travel time for commuters. RFID tags installed in
+emergency vehicles facilitate their prioritized passage through
+intersections, ensuring swift response to critical situations.
+With its modular hardware setup including LEDs, wires,
+Arduino, RFID components, and a breadboard, STMS offers a
+scalable solution adaptable to various urban environments. By
+optimizing traffic flow and prioritizing emergency vehicles,
+STMS enhances road safety, reduces environmental impact,
+and improves overall quality of life in urban areas. Its user-
+friendly interface allows for easy monitoring and management
+of traffic conditions, providing stakeholders with valuable
+insights for decision-making. Ultimately, the Smart Traffic
+Management System represents a transformative approach to
+urban mobility, addressing key challenges while laying the
+foundation for smarter, more efficient cities.
+
+The project significantly contributes to environmental sus-
+tainability through its innovative approach to optimizing traffic
+flow and reducing congestion. By leveraging advanced tech-
+nologies such as real-time video analysis and dynamic traffic
+signal control, the system minimizes vehicle idling time and
+unnecessary stops, resulting in reduced fuel consumption and
+emissions. This translates to lower levels of carbon dioxide and
+other harmful pollutants released into the atmosphere, thereby
+improving air quality and mitigating the impacts of climate
+change. Moreover, the project encourages the adoption of
+sustainable transportation modes by promoting public transit,
+cycling, and walking, which further reduces the reliance on
+individual car travel and associated environmental impacts.
+Additionally, by incorporating energy-efficient traffic signals
+and smart sensors, the system enhances energy efficiency in ur-
+ban transportation infrastructure, contributing to overall energy
+savings and a reduced environmental footprint. Ultimately, the
+project not only improves traffic management but also fosters
+a greener and more sustainable urban environment for present
+and future generations.
+
+In the subsequent sections, this paper provides a comprehen-
+sive review of the literature, exploring existing research and
+advancements in traffic management technologies (Section 2).
+It then delves into the intricate details of various prediction
+models and the proposed framework, elucidating the method-
+ologies employed and the rationale behind their selection
+(Section 3). Following this, the paper presents results and
+comparative analyses, offering insights into the performance
+and efficacy of different prediction models in optimizing traffic
+flow (Section 4). Finally, the paper concludes with a discussion
+on the implications and future directions of the research,
+
+highlighting potential avenues for further exploration and
+innovation in the field of traffic management and optimization
+(Section 5).
+
+Il. RELATED WORK
+
+Real-time traffic monitoring system using wireless sen-
+sor networks : This paper proposes a system that employs
+wireless sensor networks for real-time traffic monitoring. It
+aims to manage traffic congestion efficiently by collecting and
+analyzing traffic data from various sensors deployed along
+road networks.
+
+Traffic flow prediction using LSTM neural networks:
+The study introduces a traffic flow prediction model based
+on Long Short-Term Memory (LSTM) neural networks. This
+model forecasts future traffic conditions by analyzing historical
+traffic data, aiding proactive traffic management strategies.
+
+Intelligent traffic management system using IoT and
+deep learning: This research presents an intelligent traffic
+management system that integrates Internet of Things (loT)
+devices and deep learning techniques. By analyzing real-time
+traffic data using deep neural networks, the system optimizes
+traffic flow and enhances road safety.
+
+RFID applications for smart cities: The paper provides
+an overview of Radio Frequency Identification (RFID) appli-
+cations in smart cities, emphasizing its role in traffic manage-
+ment and urban infrastructure monitoring. RFID technology
+contributes to sustainable urban development by enhancing
+traffic flow and safety.
+
+Dynamic traffic light control system based on vehicle
+density estimation: This study proposes a dynamic traffic
+light control system that adjusts signal timings based on real-
+time vehicle density estimation. By utilizing computer vision
+techniques for vehicle detection, the system optimizes traffic
+flow and reduces congestion.
+
+Efficient traffic management using VANETs: The pa-
+per surveys the potential of Vehicular Ad-Hoc Networks
+(VANETs) for efficient traffic management. It discusses com-
+munication protocols and applications for real-time monitor-
+ing, congestion detection, and emergency vehicle prioritiza-
+tion.
+
+Real-time traffic monitoring using IoT and cloud com-
+puting: This research presents a real-time traffic monitoring
+system that leverages loT devices and cloud computing. By
+collecting and analyzing traffic data in real-time, the system
+enables proactive congestion mitigation and enhances road
+safety.
+
+Urban traffic congestion prediction using deep learning:
+The study introduces a deep learning approach for predicting
+urban traffic congestion. By analyzing spatio-temporal traffic
+patterns, the model forecasts congestion hotspots, facilitating
+targeted interventions for congestion mitigation.
+
+Enhancing urban mobility through intelligent traffic
+signal control systems: This paper discusses intelligent traffic
+signal control systems to improve urban mobility and reduce
+congestion. By dynamically adjusting signal timings, these
+
+systems optimize traffic flow, prioritize alternative transporta-
+tion modes, and enhance road safety.
+
+RFID-based intelligent transportation systems: A sur-
+vey: This survey provides insights into RFID-based Intelligent
+Transportation Systems (ITS) and their applications in traffic
+management, toll collection, and vehicle tracking. RFID tech-
+nology contributes to efficient traffic flow and safety in urban
+and highway environments.
+
+Smart Traffie Light Control System Using IoT and
+Machine Learning: This paper presents a smart traffic light
+control system that integrates loT devices and machine learn-
+ing algorithms. By analyzing real-time traffic data, the system
+dynamically adjusts signal timings to optimize traffic flow and
+reduce congestion.
+
+Optimization of Traffic Signal Timing Using Genetic
+Algorithms : The study proposes a traffic signal timing opti-
+mization approach based on genetic algorithms. By iteratively
+evolving signal schedules, the system minimizes traffic delays
+and enhances intersection efficiency.
+
+Dynamic Route Planning for Public Transportation
+Systems Using GIS : This research explores dynamic route
+planning techniques for public transportation systems using
+Geographic Information Systems (GIS). By considering real-
+time traffic conditions and passenger demand, the system opti-
+mizes bus routes to improve service efficiency and reliability.
+
+Enhancing Pedestrian Safety Through Smart Crosswalk
+Systems : The paper discusses smart crosswalk systems de-
+signed to enhance pedestrian safety. By integrating sensors and
+traffic lights with pedestrian signals, these systems improve
+crosswalk visibility and facilitate safer pedestrian crossings.
+
+Real-time Incident Detection and Management in Intel-
+ligent Transportation Systems : This study presents a real-
+time incident detection and management system for Intelligent
+Transportation Systems (ITS). By analyzing traffic data and
+surveillance footage, the system detects incidents promptly and
+coordinates emergency responses to minimize disruptions.
+
+Traffic Congestion Pricing: Theory, Applications, and
+Challenges : The paper examines the concept of traffic
+congestion pricing and its applications in managing urban traf-
+fic congestion. It discusses theoretical frameworks, practical
+implementations, and challenges associated with congestion
+pricing schemes.
+
+Fleet Management Systems for Efficient Goods Trans-
+portation : This research explores fleet management sys-
+tems designed to optimize goods transportation efficiency. By
+monitoring vehicle routes, fuel consumption, and maintenance
+schedules, these systems improve fleet productivity and reduce
+operational costs.
+
+Integration of Autonomous Vehicles into Urban Trans-
+portation Networks : The study investigates the integration of
+autonomous vehicles (AVs) into urban transportation networks.
+It examines the potential impacts of AVs on traffic flow, road
+safety, and urban mobility, as well as the challenges and
+opportunities associated with their adoption.
+
+Smart Parking Solutions for Urban Areas: Technologies
+and Implementation Strategies : This paper discusses smart
+
+parking solutions aimed at alleviating parking congestion in
+urban areas. It explores technologies such as sensor-based
+parking guidance systems and mobile applications, along with
+implementation strategies for effective parking management.
+
+Enhancing Multi-medal Transportation Systems
+Through Intermodal Connectivity : The research explores
+strategies for enhancing multi-modal transportation systems
+through intermodal connectivity. It discusses the integration
+of different modes of transportation, such as buses, trains, and
+bicycles, to provide seamless and efficient mobility options
+for commuters.
+
+Il]. PROPOSED METHODOLOGY
+
+A. Proposed System Overview:
+
+Our proposed system takes an image from the CCTV
+cameras at traffic junctions as input for real-time traffic density
+calculation using image processing and object detection. This
+image is passed on to the vehicle detection algorithm, which
+uses YOLO. The number of vehicles of each class, such as
+car, bike, bus, and truck, is detected, which is to calculate
+the density of traffic. The signal switching algorithm uses this
+density, among some other factors, to set the green signal timer
+for each lane.The green signal time is restricted to a maximum
+and minimum value in order to avoid starvation of a particular
+lane. This model is implemented on hardware devices using
+arduino uno , RFID , breadboard , wires and leds as shown in
+fig 1.
+
+‘
+ie
+
+Fig. 1. Proposed Working Model
+
+B. Vehicle Detection Module :
+
+The proposed system uses YOLO (You only look once)
+for vehicle detection, which provides the desired accuracy
+and processing time. A custom YOLO model was trained
+for vehicle detection, which can detect vehicles of different
+classes like cars, bikes, heavy vehicles (buses and trucks), and
+rickshaws. YOLO is a clever convolutional neural network
+(CNN) for performing object detection in real-time. The
+algorithm applies a single neural network to the full image,
+and then divides the image into regions and predicts bounding
+boxes and probabilities for each region. These bounding boxes
+
+are weighted by the predicted probabilities. YOLO is popular
+because it achieves high accuracy while also being able to run
+in real-time. The algorithm “only looks once” at the image in
+the sense that it requires only one forward propagation pass
+through the neural network to make predictions. After nonmax
+suppression (which makes sure the object detection algorithm
+only detects each object once), it then outputs recognized
+objects together with the bounding boxes. With YOLO, a
+single CNN simultaneously predicts multiple bounding boxes
+and class probabilities for those boxes. The backbone CNN
+used in YOLO can be further simplified to improve processing
+time. Darknet is an open source neural network framework
+written in C and CUDA. It is fast, easy to install, and supports
+CPU and GPU computation . With DarkNet, YOLO achieves
+72.9 percent top | accuracy and 91.2 percent top-5 accuracy on
+ImageNet. Darknet uses mostly 3 x 3 filters to extract features
+and 1 x | filters to reduce output channels. It also uses global
+average pooling to make predictions.The dataset for training
+the model was prepared by scraping images from google and
+labelling them manually using LabellMG, a graphical image
+annotation tool . Then the model was trained using the pre-
+trained weights downloaded from the YOLO website. The
+configuration of the .cfg file used for training was changed in
+accordance with the specifications of our model. The number
+of output neurons in the last layer was set equal to the number
+of classes the model is supposed to detect by changing the
+*classes’ variable. In our system, this was 4 viz. Car, Bike,
+Bus/Truck, and Rickshaw. The number of filters also needs to
+be changed by the formula 5*(5+number of classes), i.e., 45 in
+our case. After making these configuration changes, the model
+was trained until the loss was significantly less and no longer
+seemed to reduce. This marked the end of the training, and
+the weights were now updated according to our requirements.
+These weights were then imported in code and used for vehicle
+detection with the help of OpenCV library. A threshold is set
+as the minimum confidence required for successful detection.
+After the model is loaded and an image is fed to the model,
+it gives the result in a JSON format ie., in the form of key-
+value pairs, in which labels are keys, and their confidence
+and coordinates are values. Again, OpenCV can be used to
+draw the bounding boxes on the images from the labels and
+coordinates received.
+
+Fig. 2 shows test images on which our vehicle detection
+model was applied. The left side of the figure shows the
+original image and the right side is the output after the vehicle
+detection model is applied on the image, with bounding boxes
+and corresponding labels.
+
+C. Signal Switching Module :
+
+The Signal Switching Algorithm sets the green signal timer
+according to traffic density returned by the vehicle detection
+module. It also switches between the signals cyclically accord-
+ing to the timers. The algorithm takes the information about
+the vehicles that were detected from the detection module, as
+explained in the previous section, as input. This is in JSON
+format, with the label of the object detected as the key and the
+
+Fig. 2. Vehicle Detection Results
+
+confidence and coordinates as the values. This input is then
+parsed to calculate the total number of vehicles of each class.
+After this, the green signal time for the signal is calculated
+and assigned to it, and the red signal times of other signals
+are adjusted accordingly. The algorithm can be scaled up or
+down to any number of signals at an intersection. All the
+four frames continuously give corresponding count and vehicle
+density with the help of multithreading. Once the green timer
+of the current signal becomes zero, the next signal becomes
+green for the amount of time set by the algorithm. The green
+signal time is then calculated using (1).
+
+XZ (NoOF Vehicles wniciectass * AVErAgeTiME ytucleCiass)
+teltcleChass
+
+GST =
+
+(NoO fLanes + 1) qd)
+
+where:
+« GST is green signal time
+« noOfVehiclesOfClass is the number of vehicles of each
+class of vehicle at the signal as detected by the vehicle
+detection module,
+« averageTimeOfClass is the average time the vehicles of
+that class take to cross an intersection, and
+« noOfLanes is the number of lanes at the intersection
+Based on the green signal time the corresponding green leds
+are turned on. Now on the arrival of a emergency vehicle,
+the corresponding rfid reader reads the rfid tag and then
+dynamically switches on the green light for the lane where
+the emergency vehicle has arrived.
+
+D. Hardware Integration :
+
+The system integrates various hardware components includ-
+ing cameras, arduino uno , RFID readers, and LEDs to monitor
+traffic density, prioritize emergency vehicles, and dynamically
+
+People
+
+( People ( Devices | (Machines | || User ) { Emergency Vehicle
+
+IRFID Detection
+
+view traffic
+Devices
+
+Microcontrollers.
+
+ontrol Signals
+
+Fig. 3. Flow diagram
+
+control traffic signals. High-definition cameras capture live
+video feeds of traffic movements at intersections, which are
+then processed in real-time by arduino uno using computer
+vision algorithms to estimate vehicle density in each lane.
+Based on this analysis, the system dynamically adjusts traffic
+signal timings to optimize traffic flow and reduce congestion.
+Additionally, RFID readers installed in emergency vehicles
+communicate with RFID tags placed at intersections, allowing
+for priority access during emergencies as shown in fig4.
+
+Fig. 4. Circuit Diagram
+
+IV. RESULT ANALYSIS
+
+A. Working :
+
+The system works by taking live camera videos with the
+help of webcam in the four lanes , it then calculates the
+vehicle density in all the four lanes simultaneously with
+the help of multithreading in python ( simultaneous execu-
+tion of multiple processes). As per the calculated vehicle
+density the corresponding green signal is switched on for
+the particular lane in loop. On the arrival of emergency
+vehicle, the corresponding Rfid tag is activated indicating a
+emergency vehicle and the system dynamically switches to
+
+that particular lane. The system operates in a closed-loop
+manner, continuously monitoring traffic conditions, analyzing
+data, and adapting traffic signal control strategies accordingly.
+Through the seamless integration of hardware components and
+intelligent algorithms, the STMS provides an efficient and
+reliable solution for addressing traffic management challenges
+in urban environments, ultimately improving overall road
+safety and efficiency.
+
+Fig. 5. Actual Diagram
+
+B. Performance:
+
+The vehicle detection module was tested with a variety of
+test images containing varying amounts of vehicles, and the
+accuracy of detection was found to be in the range of 75-80
+percent. This is satisfactory, but not optimum. The primary
+reason for low accuracy is the lack of a proper dataset. To
+improve upon this, real-life footage from traffic cameras can
+be used to train the model, so that accuracy of the system can
+be improved.
+
+On running the model on prerecorded videos as shown in
+the GU] interface in fig6 the following timings were observed
+for the 4 lanes in a continuous loop as shown in table1.
+
+Fig. 6. GUI
+
+{ Lanel | Lane2 | Lane3 | Lane
+{10 10 al 13
+{2 13 “10 Il
+{12 12 I Il
+[ 13 13 IL 12
+[ 12 10 10 10
+[ 14 13 13 12
+[ IL 12 13 14
+[ 10 10 10 10
+[ 10 10 10 10
+| TABLE I
+
+GREEN SIGNAL TIME FOR THE FOUR LOOPS
+
+V. CONCLUSION
+
+In this project, we developed a Smart Traffic Management
+System (STMS) aimed at optimizing traffic flow and enhanc-
+ing road safety in urban areas. Through the integration of
+YOLO object detection for vehicle density estimation and
+RFID technology for emergency vehicle prioritization, the sys-
+tem offers a comprehensive solution to the challenges of urban.
+traffic congestion. Our experimental results demonstrated the
+effectiveness of the STMS in accurately monitoring vehicle
+density across multiple lanes in real-time. By dynamically
+adjusting traffic signal timings based on current traffic condi-
+tions, the system effectively reduced congestion and improved
+overall road efficiency. Additionally, the integration of RFID
+tags for emergency vehicles ensured prompt identification and
+prioritization, facilitating swift passage through intersections
+during critical situations. Looking ahead, further enhance-
+ments to the STMS could involve the incorporation of machine
+learning algorithms for predictive traffic analysis and adaptive
+signal control. Moreover, expanding the system’s scalability
+and interoperability to accommodate larger urban environ-
+ments and diverse traffic scenarios would be beneficial for
+broader deployment and adoption. In conclusion, the STMS
+represents a significant step towards smarter and more efficient
+
+tra!
+
+fic management systems, contributing to safer and more
+
+sustainable urban transportation networks.
+
+REFERENCES
+
+M. Johnson and A. Smith, ’Real-time traffic monitoring and congestion
+detection system using wireless sensor networks,” IEEE Transactions
+on Intelligent Transportation Systems, vol. 10, no. 4, pp. 567-578, Dec.
+2018.
+
+N. Patel ef al., ""Traffic flow prediction using Long Short-Term Mem-
+ory neural networks,” IEEE Transactions on Intelligent Transportation
+Systems, vol. 15, no. 2, pp. 234-245, May 2020.
+
+K. Wang and B. Chen, “Intelligent traffic management system using IoT
+and deep learning,” IEEE Journal on Selected Areas in Communications,
+vol. 25, no. 3, pp. 123-135, Jun. 2019.
+
+Q. Liu et al., ""RFID applications for smart cities)’ IEEE Communica-
+tions Magazine, vol. 30, no. 1, pp. 45-56, Mar. 2021.
+
+Z. Zhang and W. Li, ""Dynamic traffic light control system based on
+vehicle density estimation,” IEEE Transactions on Vehicular Technology,
+vol. 20, no. 5, pp. 789-800, Sep. 2018.
+
+R. Kumar and S. Gupta, ""Efficient traffic management using VANETs,”
+IEEE Wireless Communications, vol. 12, no. 3, pp. 456-467, Aug. 2017.
+T. Chen et al., “Real-time traffic monitoring using IoT and cloud
+computing,” IEEE Intemet of Things Journal, vol. 5, no. 2, pp. 89-102.
+Feb. 2020.
+
+[8
+
+(9
+
+10:
+
+11
+
+14
+
+Is
+
+16
+
+18
+
+19
+
+20)
+
+J. Lee and H. Kim, “Urban traffic congestion prediction using deep
+learning.” IEEE Transactions on Big Data, vol. 8, no. 4, pp. 567-578,
+Nov. 2019.
+
+L. Wang et al., ""Fleet management systems for efficient goods trans-
+portation,” IEEE Transactions on Intelligent Transportation Systems, vol.
+14, no. 3, pp. 345-356, Apr. 2020.
+
+W. Zhang and Y. Liu, “Integration of autonomous vehicles into urban
+transportation networks,” IEEE Transactions on Intelligent Transporta-
+tion Systems, vol. 18, no. 1, pp. 23-34, Jan. 2018.
+
+H. Park et al., ""Smart parking solutions for urban areas: Technologies
+and implementation strategies.” IEEE Transactions on Industrial Infor-
+matics, vol. 22, no. 2, pp. 345-356, Mar. 2019.
+
+X. Li and Z. Wang, “Enhancing multi-modal transportation systems
+through intermodal connectivity,’ IEEE Transactions on Intelligent
+Transportation Systems, vol. 21, no. 4, pp. 567-578, Aug. 2021.
+
+A. Kumar and B. Singh, “Optimization of traffic signal timing using
+genetic algorithms,” IEEE Transactions on Evolutionary Computation,
+vol. 17, no. 2, pp. 234-245, Jun. 2019.
+
+Y. Chen and C. Wu, ""Dynamic route planning for public transportation
+systems using GIS,” IEEE Transactions on Intelligent Transportation
+Systems, vol. 15, no. 3, pp. 345-356, Sep. 2020.
+
+S. Brown et al., ""Enhancing pedestrian safety through smart crosswalk
+systems,” IEEE Transactions on Mobile Computing, vol. 12, no. 4, pp.
+456-467, Oct. 2018.
+
+E. Garcia et al., ’Real-time incident detection and management in
+intelligent transportation systems,’ IEEE Transactions on Intelligent
+Transportation Systems, vol. 16, no. 5, pp. 567-578, May 2017.
+
+L. Wang and Y. Zhang, ”Traffic congestion pricing: Theory, applica-
+tions, and challenges,” IEEE Transactions on Intelligent Transportation
+Systems, vol. 19, no. I, pp. 123-135, Jan. 2019.
+
+M. Zhang et al., “Traffic management using VANETs: A review,’ IEEE
+Transactions on Vehicular Technology, vol. 14, no. 2, pp. 234-245, Apr.
+2021.
+
+T. Park and K. Lee, ""Machine learning approaches for traffic flow pre-
+diction,” IEEE Transactions on Neural Networks and Learning Systems,
+vol. 25, no. 3, pp. 345-356, Mar. 2020.
+
+T. Park and K. Lee, ""Machine learning approaches for traffic flow pre-
+diction.” IEEE Transactions on Neural Networks and Learning Systems,
+vol. 25, no. 3, pp. 345-356, Mar. 2020.
+
+"
